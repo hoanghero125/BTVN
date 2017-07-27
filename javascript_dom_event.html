@@ -3,14 +3,14 @@
 <body>
 <div style="width:100%;height:120px;"></div>
 <div style="background-color:#3348ce;width:170px;height:80px;margin:20px;padding-top:20px;color:#ffffff;font-weight:bold;font-size:18px;float:left;text-align:center;" onmouseover="this.innerHTML='hoanghero_125'" onmouseout="this.innerHTML='Subscribe for'">Subscribe for</div>
-<div style="background-color:#3348ce;width:170px;height:80px;margin:20px;padding-top:20px; font-weight: bold" onclick="clickMeEvent(this)">Click me now</div>
-<script type="application/javascript">
+<div style="background-color:#D94A38;width:170px;height:80px;margin:20px;padding-top:20px;color:#ffffff;font-weight:bold;font-size:18px;float:left;text-align:center;" onclick="clickMeEvent(this)">Click Me Now</div>
+  <script type="application/javascript">
 function clickMeEvent(obj) {
-  if (obj.innerHTML == "Click me now") {
-    obj.innerHTML = "Click me now<br>Click Me again right now";
+  if (obj.innerHTML == "Click Me Now") {
+    obj.innerHTML = "Click Me Now<br>Click Me Again Right Now";
     return;
   }
-  if (obj.innerHTML == "Click me now<br>Click Me again right now") {
+  if (obj.innerHTML == "Click Me<br>Click Me Again Right Now") {
     obj.innerHTML = "JOHN CENA";  
     return; 
   }
@@ -23,6 +23,7 @@ function clickMeEvent(obj) {
     return;
   }
 }
+</script>
 </script>
 <h3>Way 1:</h3>
 <h2 onclick="this.innerHTML='BOOM!'">DO NOT CLICK THIS! YOU WILL DIE x_x !</h2>
