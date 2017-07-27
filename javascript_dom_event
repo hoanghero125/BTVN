@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div style="width:100%;height:120px;"></div>
+<div style="background-color:#3348ce;width:170px;height:80px;margin:20px;padding-top:20px;color:#ffffff;font-weight:bold;font-size:18px;float:left;text-align:center;" onmouseover="this.innerHTML='hoanghero_125'" onmouseout="this.innerHTML='Subscribe for'">Subscribe for</div>
+<div style="background-color:#3348ce;width:170px;height:80px;margin:20px;padding-top:20px;color:#ffffff;font-weight:bold;font-size:18px;float:left;text-align:center;" onclick="clickMeEvent(this)">Click right now</div>
+<script type="application/javascript">
+function clickMeEvent(obj) {
+  if (obj.innerHTML == "Click Me") {
+    obj.innerHTML = "Click Me<br>Click Me again right now";
+    return;
+  }
+  if (obj.innerHTML == "Click Me<br>Click Me again right now") {
+    obj.innerHTML = "JOHN CENA";  
+    return; 
+  }
+  if (obj.innerHTML == "JOHN CENA") {
+  obj.innerHTML = ":L";  
+    return; 
+  }
+  if (obj.innerHTML == ":L") {
+    obj.style.display = "none";
+    return;
+  }
+}
+</script>
+<h3>Way 1:</h3>
+<h2 onclick="this.innerHTML=''">DO NOT CLICK THIS! YOU WILL DIE x_x !</h2>
+<h3> Way 2:</h3>
+<h2 onclick="changeText(this)">YOU CAN CLICK THIS IF YOU WANNA DEATH! :D</h2>
+<script>
+function changeText(id) { 
+    id.innerHTML = "BOOM!";
+}
+</script>
+<button onclick="displayDate()">Thời gian</button>
+<script>
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
+<p id="demo"></p>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+You can try to click this!</div>
+<script>
+function mDown(obj) {
+    obj.style.backgroundColor = "#1ec5e5";
+    obj.innerHTML = "Boom";
+}
+
+function mUp(obj) {
+    obj.style.backgroundColor="#a96fdb";
+    obj.innerHTML=":L!";
+}
+</script>
+<button onclick="myFunction()">Pls click me! :D</button>
+<p id="demo"></p> 
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "JOHN CENA";
+}
+</script>
+<button id="myBtn">Try to click this :L</button>
+<p id="demo"></p>
+<script>
+document.getElementById("myBtn").onclick = function(){displayDate()};
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
+<span onmouseover="this.style.color='blue'">Mouse over me!</span>
+</body>
+</html> 
